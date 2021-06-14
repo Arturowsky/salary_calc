@@ -166,7 +166,7 @@ const Calculator = () => {
             </div>
             <h2 className="red">{netto.toFixed(0)} nok netto</h2>
             <div><h2 className="blue">{netto === 0 ? netto : (netto / chooseCurrency).toFixed(2)} netto</h2></div>
-            <p>text</p>
+            
         </div>
         
         </div>
