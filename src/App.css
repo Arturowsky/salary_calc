@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+
 }
 
 .main-container {
@@ -11,33 +11,8 @@
   background:#fff;
 
 }
-/* COMPONENTS*/
-.text-wrapper {
-  width: 1500px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-.links-wrapper {
-  width: 1500px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 15px;
 
-}
-.icons {
-  width: 120px;
-  height: 120px;
-}
 
-/* SHADOWS */
-.shadow {
-  border: 1px solid #E1DEDE;
-  box-shadow: 0px 25px 50px 25px rgba(0, 0, 0, 0.06);
-}
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6, p, a, button, details {
   font-family: 'Poppins', sans-serif;
@@ -49,23 +24,34 @@ h1 {
 }
 
 /* ITEMS */
-.item-logo {
-  width: 150px;
-  height: 150px;
+
+.logo-header {
+  display: grid;
+  grid-template-columns: 20% auto;
+  gap: 10px;
 }
 
+.logo-header img {
+  width: 64px;
+  height: 64px;
+}
 .app-container {
   width: 100vw;
-  height: 100vh;
-  background: url("./assets/background2.svg");
+  height: auto;
   display: grid;
-  grid-template-rows: 75% 15% 10%;
+}
+.app-container-upper {
+  
+  width: 100vw;
+  display: grid;
+  place-items: center;
 }
 .app-container-upper-grid {
+  
   display: grid;
   place-items: center;
   padding: 20px 0;
-  
+
 }
 .app-form {
   margin:  5px 0;
@@ -74,6 +60,7 @@ h1 {
   grid-template-columns: 25% 75%;
   width: 100%;
 }
+
 .app-form-select {
   margin:  5px 0;
   padding: 0 20px;
@@ -82,30 +69,20 @@ h1 {
   width: 100%;
 }
 .app-form-check {
-  margin:  5px 0;
-  padding: 0 20px;
   display: grid;
   grid-template-columns: 10% 90%;
   width: 100%;
 }
 .app-container-lower {
+  width: 100vw;
   display: grid;
   place-items: center;
+  border: 1px solid pink;
 }
 .app-container-lower p {
   position: relative;
-  
 }
-footer p {
-  color: rgb(20, 20, 20);
-  padding: 10px;
-  margin: 0 10px;
-  font-size: .7rem;
-  font-weight: 300;
-  text-align:center;
-  top: - 20px;
-  position: relative;
-}
+
 .-check {
   display: grid;
   place-items: center;
@@ -118,7 +95,7 @@ h1 {
 }
 h1 span {
   display: block;
-  color: #564646;
+  color: #2c3e50;
   font-size: 48px;
   font-weight: 400;
 }
@@ -132,12 +109,18 @@ h2 {
 h2.blue {
   color: #2AA8C3;
   font-weight: 400;
-  font-size: 1.6rem
+  font-size: 1.2rem
 }
 h2.red {
-  color: rgb(192, 35, 35);
-  top: 20px;
-  position: relative;
+  background: #1abc9c;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  
 }
 h3 {
   font-family: 'Poppins', sans-serif;
@@ -145,8 +128,19 @@ h3 {
   font-weight: 400;
   padding: 10px;
 }
+h3 span {
+  font-size: .6rem;
+  color: rgb(129, 127, 127);
+  word-wrap: normal
+}
+p {
+  font-size: .6rem;
+  color: rgb(129, 127, 127);
+  margin-left: 0px;
+  margin-top: 10px;
+}
 input[type=number], select {
-  font-size: 18px;
+  font-size: .7rem;
   font-family: 'Poppins', sans-serif;
   padding: 10px;
   border: 1px solid #4178CB;
