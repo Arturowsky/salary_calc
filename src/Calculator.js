@@ -105,7 +105,10 @@ const Calculator = () => {
     // fetch('http://api.nbp.pl/api/exchangerates/tables/a/')
     // .then(response => response.json())
     // .then(data => console.log(data));
- 
+    fetch('http://api.openweathermap.org/data/2.5/weather?q=lodz&appid=493436ba75c03f213671d765e59f1d81')
+    .then(response => response.json())
+    .then(data => console.log(data));
+    
     const money = (numberHours * perHour) 
     const minusTax = (tax / 100 ) * money
     const foodcost = workingDays * 55
@@ -120,7 +123,7 @@ const Calculator = () => {
             <div className="logo-header"><img src={logo} alt="" /><h1><span>Calculator</span></h1></div>
             <div className="app-form">
                 <input type="number" placeholder="0" onChange={Hours}/>
-                <h3>Number of working hours</h3>
+                <h3>Number of working hours </h3>
             </div>
             <div className="app-form">
                 <input type="number" placeholder="0" onChange={HourlyWage} />
@@ -138,7 +141,7 @@ const Calculator = () => {
                 <input type="number" placeholder="0" onChange={WorkDays} />
                 <h3>Working Days x 55 nok<br /></h3>
             </div>
-            <p>Staff food cost is Your working days x 55 nok per day</p>
+            <p>Staff food cost is Your working days x 55 nok per day </p>
             
             <div className="app-form-check">
                 <div className="-check"><input type="checkbox" onClick={CheckboxFlag} /></div>
@@ -166,7 +169,7 @@ const Calculator = () => {
             </div>
             <h2 className="red">{netto.toFixed(0)} nok netto</h2>
             <div><h2 className="blue">{netto === 0 ? netto : (netto / chooseCurrency).toFixed(2)} netto</h2></div>
-            
+            <p className="copyrights">Copyright <a href="https://github.com/Arturowsky">@arturowsky</a> 2021 🧐</p>
         </div>
         
         </div>

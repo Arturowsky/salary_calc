@@ -146,4 +146,9 @@ input[type=number], select {
   border: 1px solid #4178CB;
   background: none;
 }
-
+.copyrights {
+  font-size: .8rem;
+}
+.copyrights a {
+  color: #0984e3;
+}
