@@ -5,8 +5,8 @@ Project created for practise. You can calculate your monthly income by provide y
 www.arturlewandowicz.com/salary/index.html
 
 
-# TO DO
-* [ ] Remove infinite error
+# TO DO 🧐
+* [ ] Remove infinite error 
 
 # Author
 Artur Lewandowicz - www.arturlewandowicz.com
