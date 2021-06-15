@@ -105,9 +105,7 @@ const Calculator = () => {
     // fetch('http://api.nbp.pl/api/exchangerates/tables/a/')
     // .then(response => response.json())
     // .then(data => console.log(data));
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=lodz&appid=493436ba75c03f213671d765e59f1d81')
-    .then(response => response.json())
-    .then(data => console.log(data));
+    
     
     const money = (numberHours * perHour) 
     const minusTax = (tax / 100 ) * money
