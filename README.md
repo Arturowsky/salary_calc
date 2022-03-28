@@ -2,7 +2,7 @@
 Project created for practise. You can calculate your monthly income by provide your hourly pay multiply by working hours minus tax etc.
 
 # Live Demo
-www.arturlewandowicz.com/salary/index.html
+https://salary.arturlewandowicz.com/
 
 
 # TO DO 🧐
